@@ -1,0 +1,57 @@
+
+
+.canvas {
+  background-color: #000;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.audioPlayer {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  margin: 30px auto;
+  button{
+    margin-top: 8px;
+    width: 100%;
+  padding: 12px 20px;
+  }
+  .saveButton {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+}
+
+
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .canvas {width: 100%;
+}
+}

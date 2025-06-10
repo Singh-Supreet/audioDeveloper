@@ -1,0 +1,38 @@
+.tab {
+    display: flex;
+    gap: 8px;
+
+    button {
+        width: 100%;
+        &.active{
+            background-color: #4fa8d3;
+        }
+
+    }
+
+
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+    .audioItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+
+        button {
+            margin-top: 8px;
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .list {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+}

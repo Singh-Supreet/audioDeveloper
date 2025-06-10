@@ -1,0 +1,40 @@
+.searchForm {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+
+    input {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+}
+
+.soundCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+    .audioPreview {
+        button {
+            margin-top: 8px;
+            width: 100%;
+        }
+    }
+
+}
+
+.resultGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .resultGrid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px;
+    }
+}

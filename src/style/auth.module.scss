@@ -1,0 +1,41 @@
+.message {
+    margin-bottom: 16px;
+
+    &.success {
+        color: lightgreen;
+    }
+
+    &.error {
+        color: red;
+    }
+}
+
+.authForm {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        input {
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.toggleView {
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .message {
+        font-size: 14px;
+    }
+}
