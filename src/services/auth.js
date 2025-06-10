@@ -1,6 +1,5 @@
-// src/services/authService.js
 const DB_NAME = 'AuthDB';
-const DB_VERSION = 2; // Incremented version to add users store
+const DB_VERSION = 2;
 const STORE_USERS = 'users';
 
 let db = null;
@@ -21,7 +20,6 @@ const openDB = () => {
     request.onupgradeneeded = (event) => {
       const db = event.target.result;
       
-      // Create users store if it doesn't exist
       if (!db.objectStoreNames.contains(STORE_USERS)) {
         db.createObjectStore(STORE_USERS, { keyPath: 'username' });
       }

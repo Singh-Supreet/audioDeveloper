@@ -1,4 +1,3 @@
-// src/components/Auth.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getUser, addUser } from '../services/auth';
